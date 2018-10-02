@@ -3,7 +3,7 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Hello World" FontSize="Large" HorizontalOptions="Center" HorizontalTextAlignment="Center" />
-            <Button Text="Click Me!" Clicked="Handle_Clicked" HeightRequest="50"/>
+            <Button Text="{Binding Name}" Clicked="Handle_Clicked" HeightRequest="50"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

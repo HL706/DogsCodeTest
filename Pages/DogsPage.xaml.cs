@@ -1,17 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using Dogs.Models;
 using Xamarin.Forms;
 
 namespace Dogs.Pages
 {
     public partial class DogsPage : ContentPage
     {
-        int _count = 0;
+        DogModel _bindingTest;
+
+        public DogModel BindingTest
+        {
+            get { return _bindingTest; }
+            private set { _bindingTest = value; }
+        }
 
         public DogsPage()
         {
             InitializeComponent();
+
+            BindingTest = new DogModel();
+            BindingTest.Name = "Frank";
+
+            BindingContext = BindingTest;
         }
 
         void Handle_Clicked(object sender, System.EventArgs e)
@@ -22,7 +33,7 @@ namespace Dogs.Pages
                 return;
             }
 
-            button.Text = $"You clicked {++_count} times!";
+            BindingTest.Name = "Bruno";
         }
     }
 }
