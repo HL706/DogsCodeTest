@@ -8,10 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Dogs.Pages.DogsPage.xaml", "Pages/DogsPage.xaml", typeof(global::Dogs.Pages.DogsPage))]
+
 namespace Dogs.Pages {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/mikey/Projects/CodeTest/Dogs/Pages/DogsPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Pages/DogsPage.xaml")]
     public partial class DogsPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

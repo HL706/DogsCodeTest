@@ -7,10 +7,10 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
-    <PackageReference Include="Xamarin.Forms" Version="2.5.0.122203" />
     <PackageReference Include="Ooui" Version="0.10.222" />
     <PackageReference Include="Ooui.Forms" Version="0.10.222" />
     <PackageReference Include="Ooui.AspNetCore" Version="0.10.222" />
+    <PackageReference Include="Xamarin.Forms" Version="3.2.0.839982" />
   </ItemGroup>
 
   <ItemGroup>
