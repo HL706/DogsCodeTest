@@ -8,4 +8,7 @@
     <PackageReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Remove="Views\Home\About.cshtml" />
+  </ItemGroup>
 </Project>
