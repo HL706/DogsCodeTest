@@ -27,3 +27,4 @@
 /Users/mikey/Projects/CodeTest/Dogs/obj/Debug/netcoreapp2.1/Dogs.dll
 /Users/mikey/Projects/CodeTest/Dogs/obj/Debug/netcoreapp2.1/Dogs.pdb
 /Users/mikey/Projects/CodeTest/Dogs/obj/Debug/netcoreapp2.1/Dogs.csproj.CopyComplete
+/Users/mikey/Projects/CodeTest/Dogs/obj/Debug/netcoreapp2.1/Dogs.Pages.DogsPage.xaml.g.cs

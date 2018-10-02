@@ -51,6 +51,9 @@ namespace Dogs
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
+            app.UseOoui();
+
+            Xamarin.Forms.Forms.Init();
 
             app.UseMvc(routes =>
             {

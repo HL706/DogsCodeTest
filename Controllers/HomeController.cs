@@ -5,6 +5,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Dogs.Models;
+using Dogs.Pages;
+using Ooui.AspNetCore;
+using Ooui;
+using Xamarin.Forms;
 
 namespace Dogs.Controllers
 {
@@ -12,26 +16,10 @@ namespace Dogs.Controllers
     {
         public IActionResult Index()
         {
-            return View();
-        }
+            var page = new DogsPage();
+            var element = page.GetOouiElement();
 
-        public IActionResult About()
-        {
-            ViewData["Message"] = "Your application description page.";
-
-            return View();
-        }
-
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
-
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
+            return new ElementResult(element, "Dogs");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

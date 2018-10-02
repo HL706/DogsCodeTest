@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "8d19439ef22c432fe18f0eac697c8789fe30c00a"
+    "signature": "538fb998172ee60238b2b0d0a7f053a768bbd117"
   },
   "compilationOptions": {
     "defines": [
@@ -25,7 +25,12 @@
       "Dogs/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.App": "2.1.1",
-          "Microsoft.NETCore.App": "2.1.0"
+          "Microsoft.NETCore.App": "2.1.0",
+          "Newtonsoft.Json": "11.0.2",
+          "Ooui": "0.10.222",
+          "Ooui.AspNetCore": "0.10.222",
+          "Ooui.Forms": "0.10.222",
+          "Xamarin.Forms": "2.5.0.122203"
         },
         "runtime": {
           "Dogs.dll": {}
@@ -203,6 +208,72 @@
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.1.0"
+        }
+      },
+      "Ooui/0.10.222": {
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Ooui.dll": {
+            "assemblyVersion": "0.10.222.0",
+            "fileVersion": "0.10.222.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Ooui.dll": {}
+        }
+      },
+      "Ooui.AspNetCore/0.10.222": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc": "2.1.1",
+          "Microsoft.AspNetCore.WebSockets": "2.1.1",
+          "Ooui": "0.10.222"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Ooui.AspNetCore.dll": {
+            "assemblyVersion": "0.10.222.0",
+            "fileVersion": "0.10.222.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Ooui.AspNetCore.dll": {}
+        }
+      },
+      "Ooui.Forms/0.10.222": {
+        "dependencies": {
+          "Ooui": "0.10.222",
+          "Xamarin.Forms": "2.5.0.122203"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Ooui.Forms.dll": {
+            "assemblyVersion": "0.10.222.0",
+            "fileVersion": "0.10.222.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Ooui.Forms.dll": {}
+        }
+      },
+      "Xamarin.Forms/2.5.0.122203": {
+        "runtime": {
+          "lib/netstandard1.0/Xamarin.Forms.Core.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          },
+          "lib/netstandard1.0/Xamarin.Forms.Platform.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/netstandard1.0/Xamarin.Forms.Xaml.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.0/Xamarin.Forms.Core.dll": {},
+          "lib/netstandard1.0/Xamarin.Forms.Platform.dll": {},
+          "lib/netstandard1.0/Xamarin.Forms.Xaml.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3204,6 +3275,34 @@
       "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "Ooui/0.10.222": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ovBUchtMu40C8BH4Iax32UPKaYNhMaYcdBDcl+Ziu2ztFVdoIAY/gx38IQ9Enz7XblspXOu0PVANL+4fXBQiiw==",
+      "path": "ooui/0.10.222",
+      "hashPath": "ooui.0.10.222.nupkg.sha512"
+    },
+    "Ooui.AspNetCore/0.10.222": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1dQV1rFNif1HkOzIHbWb06lkpASj9bwidO1D5sq7gwr7E4rOP+DlJj5/bTuLgHxbzyz60eXUYH2krEXKgud4qg==",
+      "path": "ooui.aspnetcore/0.10.222",
+      "hashPath": "ooui.aspnetcore.0.10.222.nupkg.sha512"
+    },
+    "Ooui.Forms/0.10.222": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zvmXpL8mUB43KmVYgY4L2cJoa9UWhFD2e8QiXeP/CsHMSAEUMTfMiBADuv/TnWDqRK6K3rtjGo1Z5jFIdgaWiw==",
+      "path": "ooui.forms/0.10.222",
+      "hashPath": "ooui.forms.0.10.222.nupkg.sha512"
+    },
+    "Xamarin.Forms/2.5.0.122203": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qg7A2IXbVV/5u9qqeiDhRMwpVEsbWKBxzeAtD0rTuntmaDB1Z7WuBg5IK2VBklJbKe2Ps8V9zBfEwgJIqPVJUw==",
+      "path": "xamarin.forms/2.5.0.122203",
+      "hashPath": "xamarin.forms.2.5.0.122203.nupkg.sha512"
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "type": "package",
